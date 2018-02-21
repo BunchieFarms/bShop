@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>bShop</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  <div id="header">
+  <div id="title">
+  	<table>
+  		<tr>
+  			<th><%= link_to "bShop", root_path %></th>
+  		</tr>
+  		<tr>
+  			<td><%= link_to "social classifieds", root_path %></td>
+  		</tr>
+  	</table>
+  </div>
+
+  <div id="login">
+  	<% if user_signed_in? %>
+  		Logged in as <strong><%= current_user.email %></strong>.
+  		<%= link_to 'Edit profile', edit_user_registration_path %> |
+  		<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
+  	<% else %>
+  		<%= link_to "Sign up", new_user_registration_path %> |
+  		<%= link_to "Login", new_user_session_path %>
+  	<% end %>
+  </div>
+  </div>
+
+  <%= yield %>
+
+  <div id="footer">
+  	<table>
+  		<tr>
+  			<th>Home</th>
+  			<th>About</th>
+  			<th>Rules</th>
+  		</tr>
+  	</table>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,7 @@
+#menuBar {
+	display: block;
+	padding-top: 15px;
+}
+#menuBar table {
+	width: 100%;
+}
