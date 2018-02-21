@@ -1,24 +1,15 @@
-# README
+# README for bShop
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the Readme for bShop.  Not much to see here, it is a web app that probably doesn't need to be a web app but I want to learn Rails so it will be a web app.
 
-Things you may want to cover:
+* Social Classifieds
 
-* Ruby version
+Are you sick and damn tired of going on your favorite classifieds website and the idiot poster gave almost no details on the item, no contact information, and one blurry photo? Now you can...
 
-* System dependencies
+* Call them out in public!
 
-* Configuration
+* Ask questions!
 
-* Database creation
+* Don't ask stupid questions, I'll ban your ass!
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Coming soon to the third page of Google search results!
