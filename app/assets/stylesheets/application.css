@@ -13,50 +13,60 @@
  *= require_tree .
  *= require_self
  */
-body {
-	font-family: sans-serif;
+
+html, body {
+	font-family: Helvetica;
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	background-color: black;
+	border-top: 5px solid #4a8ef9;
+	border-bottom: 3px solid #609eff;
+	background-color: #232323;
 }
 
 #title {
-	float: left;
+	padding-left: 5%;
+	padding-top: 5px;
 }
-#title th {
-	font-size: 2.3em;
-}
-#title td {
-	font-size: 1em;
-}
-#title a {	
-	text-decoration: none;
-	color: black;
+
+#title img {
+	width: 30%;
+	height: auto;
 }
 
 
 #login {
-	display: block;
-	float: right;
+	color: white;
+	width: 60%;
+	text-align:right;
+	padding-right: 5%;
+	padding-top: 10px;
+	font-size: 1em;
 }
+
 #login a {
 	text-decoration: none;
-	color: blue;
+	color: white;
 }
+
 #login a:visited {
-	color: blue;
-}
-
-
-#header {
-	width: 100%;
-	display: inline-block;
+	color: white;
 }
 
 #footer {
-	width: 100%;
-	display: inline-block;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
 	position: fixed;
 	left: 0;
 	bottom: 0;
-}
-#footer table {
-	width: 100%;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: bold;
 }

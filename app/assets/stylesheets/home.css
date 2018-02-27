@@ -1,7 +1,10 @@
 #menuBar {
-	display: block;
-	padding-top: 15px;
-}
-#menuBar table {
-	width: 100%;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-weight: bold;
+	font-size: 1.2em;
+	letter-spacing: 1px;
 }
