@@ -15,17 +15,21 @@
 //= require turbolinks
 //= require_tree .
 
-function $(id) {
-	return document.getElementById(id);
-}
 
-var burger = $('hamburger');
-var menu = $('mobileMenu');
 
-burger.onclick = (function () {
+
+
+var burger = document.getElementById('hamburger');
+var menu = document.getElementById('mobileMenu');
+
+var manager = new Hammer.Manager(burger);
+
+manager.add( new Hammer.Tap({ event: 'singletap', taps: 1 }));
+
+manager.on('singletap', function(e) {
 	burger.classList.toggle("change");
-
-	if (menu.classList.contains('contract')) {
+  
+ 	if (menu.classList.contains('contract')) {
 		menu.classList.remove("contract");
 		menu.classList.add("expand");
 	} else {
