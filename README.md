@@ -4,12 +4,6 @@ This is the Readme for bShop.  Not much to see here, it is a web app that probab
 
 * Social Classifieds
 
-Are you sick and damn tired of going on your favorite classifieds website and the idiot poster gave almost no details on the item, no contact information, and one blurry photo? Now you can...
+I am making this as an alternative to the already well-established online classifieds sites. I think it would be a cool idea to incorporate a community aspect to it, to encourage quality, descriptive posts and discussion.
 
-* Call them out in public!
-
-* Ask questions!
-
-* Don't ask stupid questions, I'll ban your ass!
-
-* Coming soon to the third page of Google search results!
+This is my first serious Rails app, so I'm learning as I'm going. I'll be working on this regularly, and all code pushed here will also be pushed to the Herokuapp site above simultaneously.

@@ -14,3 +14,22 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function $(id) {
+	return document.getElementById(id);
+}
+
+var burger = $('hamburger');
+var menu = $('mobileMenu');
+
+burger.onclick = (function () {
+	burger.classList.toggle("change");
+
+	if (menu.classList.contains('contract')) {
+		menu.classList.remove("contract");
+		menu.classList.add("expand");
+	} else {
+		menu.classList.remove("expand");
+		menu.classList.add("contract");
+	}	
+});

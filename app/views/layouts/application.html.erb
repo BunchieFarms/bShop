@@ -12,32 +12,70 @@
 
   <body>
 
+  <%  $profileLink = "Profile"
+      $logoutLink = "Logout"
+      $signupLink = "Signup"
+      $loginLink = "Login" %>
+
+  <div id="mobileMenu" class="contract">
+
+    <div class="menuContent">
+
+      <div id="navLogo"><%= link_to image_tag("bslogo.png"), root_path %></div>
+
+      <% if user_signed_in? %>
+        <%= link_to raw($profileLink), edit_user_registration_path %>
+        <%= link_to raw($logoutLink), destroy_user_session_path, method: :delete %>
+        <a href="#">Post</a>
+        <a href="#">Mail</a>
+      <% else %>
+        <%= link_to raw($signupLink), new_user_registration_path %>
+        <%= link_to raw($loginLink), new_user_session_path %>
+      <% end %>
+
+      <a href="#">Rules</a>
+      <a href="#">About</a>
+
+    </div>
+  </div>
+
+
   <div id="header">
+
     <div id="title">
-    	<div><%= link_to(image_tag("bslogo.png")) %></div>
+
+    	<div><%= link_to image_tag("bslogo.png"), root_path %></div>
+
     </div>
 
     <div id="login">
+
     	<% if user_signed_in? %>
     		Logged in as <strong><%= current_user.email %></strong>.
-    		<%= link_to 'Edit profile', edit_user_registration_path %> |
+    		<%= link_to 'Profile', edit_user_registration_path %> |
     		<%= link_to 'Logout', destroy_user_session_path, method: :delete %>
     	<% else %>
     		<%= link_to "Sign up", new_user_registration_path %> |
     		<%= link_to "Login", new_user_session_path %>
     	<% end %>
+
     </div>
+
+    <div id="hamburger">
+      <div id="bar1"></div>
+      <div id="bar2"></div>
+      <div id="bar3"></div>
+    </div>
+
+    
+
   </div>
+
 
   <%= yield %>
-
-  <div id="footer">
-  	<div><p>Home</p></div>
-    <div><p>About</p></div>
-    <div><p>Rules</p></div>
-  </div>
 
   </body>
 
 <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
 </html>
