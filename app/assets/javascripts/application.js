@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-burger =  document.getElementById('hamburger');
+burger =  document.getElementById('hamburger'); 
 menu = document.getElementById('mobileMenu');
 
 function boy() {

@@ -15,7 +15,7 @@
  */
 
 html, body {
-	font-family: Helvetica;
+	font-family: "Arial Black", Gadget, sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -31,7 +31,7 @@ html, body {
 }
 
 #title {
-	padding-left: 5%;
+	padding-left: 2%;
 	padding-top: 5px;
 }
 
@@ -46,7 +46,7 @@ html, body {
 	width: 60%;
 	text-align:right;
 	padding-right: 5%;
-	padding-top: 50px;
+	padding-top: 2.5%;
 	font-size: 1.2em;
 }
 
@@ -108,7 +108,7 @@ html, body {
 #hamburger {
 	cursor: pointer;
 	margin-right: 5%;
-	z-index: 2;
+	z-index: 2; 
 }
 
 #bar1, #bar2, #bar3 {
@@ -133,12 +133,22 @@ html, body {
     transform: rotate(405deg) translate(-8px, -8px);
 }
 
-@media only screen and (min-width: 769px) {
-	#hamburger, #mobileMenu { display: none }
+#left {
+	z-index: -1;
+	float: left;
+	position: absolute;
+	width: 50%;
+	height: 80%;
+	left: 0;
 }
 
-@media only screen and (max-width: 768px) {
-	#login { display: none }
+#right {
+	z-index: -1;
+	position: absolute;
+	right: 0;
+	width: 50%;
+	height: 80%;
+	text-align: right;
 }
 
 #footer {
@@ -151,4 +161,12 @@ html, body {
 	padding-left: 5%;
 	padding-right: 5%;
 	font-weight: bold;
+}
+
+@media only screen and (min-width: 769px) {
+	#hamburger, #mobileMenu { display: none }
+}
+
+@media only screen and (max-width: 768px) {
+	#login, #left, #right, #footer { display: none }
 }

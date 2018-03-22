@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>bShop</title>
+    <title>bShop - Social classifieds for everyone</title>
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
 
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
   </head>
 
@@ -32,8 +34,8 @@
         <%= link_to raw($signupLink), new_user_registration_path %>
         <%= link_to raw($loginLink), new_user_session_path %>
       <% end %>
-
-      <a href="#">Rules</a>
+      
+      <a href="#">Rules</a> 
       <a href="#">About</a>
 
     </div>
@@ -65,17 +67,28 @@
       <div id="bar1"></div>
       <div id="bar2"></div>
       <div id="bar3"></div>
-    </div>
+    </div>    
 
-    
+  </div>
 
+  <div id="left">
+    girls
+  </div>
+
+  <div id="right">
+    jokers
   </div>
 
 
   <%= yield %>
 
+  <div id="footer">
+    <div><p>Terms of Service</p></div>
+    <div><p>Privacy Policy</p></div>
+    <div><p>Contact</p></div>
+  </div>
+
   </body>
 
-<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 </html>
