@@ -15,7 +15,7 @@
  */
 
 html, body {
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: "Ubuntu", Gadget, sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -26,7 +26,6 @@ html, body {
 	justify-content: space-between;
 	background-color: black;
 	border-top: 5px solid #4a8ef9;
-	border-bottom: 3px solid #609eff;
 	background-color: #232323;
 }
 
@@ -36,7 +35,7 @@ html, body {
 }
 
 #title img {
-	width: 30%;
+	width: 20%;
 	height: auto;
 }
 
@@ -133,22 +132,77 @@ html, body {
     transform: rotate(405deg) translate(-8px, -8px);
 }
 
-#left {
-	z-index: -1;
-	float: left;
-	position: absolute;
-	width: 50%;
-	height: 80%;
-	left: 0;
+#nav {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background-color: #609eff;
+	box-shadow: 0px 0px 30px rgba(0,0,0,0.15);
 }
 
-#right {
-	z-index: -1;
-	position: absolute;
-	right: 0;
+#nav div {
+	text-align: center;
+	width: 20%;
+	height: 40px;
+	margin: auto auto 0px auto;
+	font-size: 150%;
+	padding-top: 10px;
+	vertical-align: middle;
+	background-color: #609eff;
+	-webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+#nav div:hover {
+	background-color: #4a8ef9;	
+	-webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+#sale, #housing, #jobs {
+	width: 100%;
+	display: none;
+	justify-content: space-around;
+	margin: 0px auto;
+	position: fixed;
+}
+
+.halfAll {
 	width: 50%;
-	height: 80%;
-	text-align: right;
+	background-color: #2b2b2b;
+	color: white;
+}
+
+.halfBottom {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.halfHead {
+	text-align: center;
+	font-size: 200%;
+	margin-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #515151;
+}
+
+.menuSection {
+	width: 25%;
+	font-size: 130%;
+}
+
+.menuSection div {
+	margin: 30px 10px 10px 10px;
+}
+
+#indie {
+	border-right: 3px solid #515151;
 }
 
 #footer {
