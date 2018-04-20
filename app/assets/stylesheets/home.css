@@ -4,8 +4,7 @@ body {
 
 #container {
 	width: 90%;
-	margin: 0px auto;
-	z-index: -100;
+	margin: 30px auto;
 }
 
 #title {

@@ -29,12 +29,12 @@ html, body {
 	background-color: #232323;
 }
 
-#title {
+#titleLogo {
 	padding-left: 2%;
 	padding-top: 5px;
 }
 
-#title img {
+#titleLogo img {
 	width: 20%;
 	height: auto;
 }
@@ -44,8 +44,8 @@ html, body {
 	color: white;
 	width: 60%;
 	text-align:right;
-	padding-right: 5%;
-	padding-top: 2.5%;
+	padding-right: 2%;
+	padding-top: 1.8%;
 	font-size: 1.2em;
 }
 
@@ -145,7 +145,7 @@ html, body {
 	width: 20%;
 	height: 40px;
 	margin: auto auto 0px auto;
-	font-size: 150%;
+	font-size: 20pt;
 	padding-top: 10px;
 	vertical-align: middle;
 	background-color: #609eff;
@@ -194,7 +194,7 @@ html, body {
 
 .menuSection {
 	width: 25%;
-	font-size: 130%;
+	font-size: 15pt;
 }
 
 .menuSection div {
